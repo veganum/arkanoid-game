@@ -19,10 +19,10 @@
   const canvas = document.querySelector("canvas");
   const ctx = canvas.getContext("2d");
 
-  //   canvas.width = 448;
-  //   canvas.height = 400;
-  canvas.width = 800;
-  canvas.height = 750;
+    canvas.width = 448;
+    canvas.height = 400;
+  // canvas.width = screen.width - 1200;
+  // canvas.height = screen.height - 210;
 
   /* VARIABLES DE LA PELOTA */
   const ballRadius = 3;
@@ -121,7 +121,7 @@
   }
 
   function draw() {
-    console.log({ rightPressed, leftPressed });
+    // console.log({ rightPressed, leftPressed });
     cleanCanvas();
     //Funciones para dibujado de elementos
     drawBall();
