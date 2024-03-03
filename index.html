@@ -28,8 +28,12 @@
   const $sprite = document.querySelector('#sprite')
   const $bricks = document.querySelector('#bricks')
 
-  canvas.width = window.innerWidth -200
-  canvas.height = window.innerHeight -200
+  // canvas.width = window.innerWidth -200
+  // canvas.height = window.innerHeight -200
+  
+  canvas.width = 448
+  canvas.height = 400
+
 
   /* Variables de nuestro juego */
 
@@ -55,13 +59,22 @@
   let leftPressed = false
 
   /* VARIABLES DE LOS LADRILLOS */
-  const brickRowCount = 20;
-  const brickColumnCount = 20;
+  // const brickRowCount = 20;
+  // const brickColumnCount = 20;
+  // const brickWidth = 32;
+  // const brickHeight = 16;
+  // const brickPadding = 0;
+  // const brickOffsetTop = 100;
+  // const brickOffsetLeft = 50;
+  // const bricks = [];
+
+  const brickRowCount = 6;
+  const brickColumnCount = 13;
   const brickWidth = 32;
   const brickHeight = 16;
   const brickPadding = 0;
-  const brickOffsetTop = 100;
-  const brickOffsetLeft = 50;
+  const brickOffsetTop = 80;
+  const brickOffsetLeft = 16;
   const bricks = [];
 
   const BRICK_STATUS = {
